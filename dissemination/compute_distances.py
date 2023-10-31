@@ -11,11 +11,11 @@ from dataloader import DisseminationDataloader
 
 from dtgw.vertex_signatures import SIGNATURE_PROVIDERS
 from dtgw.dtgw_ import compute_dtgw
-from dtgw.dtgw_alternating import compute_dtgw_log
+from dtgw.dtgw import compute_dtgw_log
 
 
-MAXABSWINDOW = 10
 
+MAXABSWINDOW = 100
 
 
 
