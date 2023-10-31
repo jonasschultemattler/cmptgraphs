@@ -228,6 +228,7 @@ find_umins(
 /// @param u out dual variables, row reduction numbers / size dim
 /// @param v out dual variables, column reduction numbers / size dim
 /// @return achieved minimum assignment cost
+
 template <bool avx2, typename idx, typename cost>
 cost lap(int dim, const cost *restrict assign_cost, bool verbose,
          idx *restrict rowsol, idx *restrict colsol,

@@ -14,8 +14,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// #include "lap.h"
-#include "lapjv2.h"
+#include "lapjv.h"
 
 #ifdef __cplusplus
  // extern "C" is used for defining C code when compiling with a C++ compiler.
