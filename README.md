@@ -34,4 +34,13 @@ chmod +x getds.sh
 ## Run Experiments
 
 mkdir output
+mkdir output/brains
+mkdir output/dissemintaion
+
+cd code
+
+./proximity_dissemination.sh
+./train_dissemination.sh
+./proximity_brains.sh
+./train_brains.sh
 
