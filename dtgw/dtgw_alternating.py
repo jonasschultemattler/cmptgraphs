@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import itertools
 import enum
 import time
@@ -7,11 +6,6 @@ import time
 import numpy as np
 import scipy.spatial
 
-# from tools import LoggingObserver, warning, shortest_warp_path, shortest_warp_path2
-# from config import CONFIG
-
-# from .warping_wrapper import dtw_wrapper, warping_update_wrapper, update_matchcost_wrapper, init_product_warping_wrapper, init_opt_matching_wrapper, init_diagonal_warping_wrapper, sakoe_chiba_band_wrapper, init_opt_warping_wrapper
-# from .dtgw_ import dtw_wrapper, warping_update_wrapper, update_matchcost_wrapper, init_product_warping_wrapper, init_opt_matching_wrapper, init_diagonal_warping_wrapper, sakoe_chiba_band_wrapper, init_opt_warping_wrapper
 from .dtgw_ import dtw_wrapper, warping_update_wrapper, warping_update_wrapper2, update_matchcost_wrapper, update_matchcost_wrapper2, init_diagonal_warping_wrapper, init_diagonal_warping_wrapper2, sakoe_chiba_band_wrapper
 
 import lapjv
