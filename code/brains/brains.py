@@ -15,25 +15,20 @@ from matplotlib import pyplot as plt
 from nilearn.connectome import ConnectivityMeasure
 from sklearn.metrics import pairwise
 
-from brain_dataloader import BrainDevelopementDataloader, AbideDataloader, ADHDDataloader
 
+from dataloader import BrainDevelopementDataloader, AbideDataloader, ADHDDataloader
 
 from dtgw.vertex_signatures import SIGNATURE_PROVIDERS
-from dtgw.dtgw_ import compute_dtgw, tgw_wrapper
-from dtgw.dtgw_alternating import compute_tgw, compute_dtgw_log2
-from dtgw.warping_wrapper import dtw_wrapper, sakoe_chiba_band_wrapper
-
-
-# from evaluate.evaluate import print_dataset_statistics, warping_path_widths
+from dtgw.dtgw_ import compute_dtgw, tgw_wrapper, dtw_wrapper, sakoe_chiba_band_wrapper
+from dtgw.dtgw import compute_tgw, compute_dtgw_log2
 
 
 # from tdGraphEmbed.model import TdGraphEmbed
 # from tdGraphEmbed.temporal_graph import TemporalGraph
-
 # import graphkernels.kernels as gk
 # from grakel.kernels import WeisfeilerLehman
-from grakel import Graph
-import igraph as ig
+# from grakel import Graph
+# import igraph as ig
 
 MAXABSWINDOW = 50
 
@@ -361,7 +356,6 @@ if __name__ == "__main__":
 	parser.add_argument("--number", type=int, default=100, help="max number of graphs from dataset to compare")
 	parser.add_argument("--log", type=bool, default=False, help="log warping path width and iterations")
 	parser.add_argument("--window", type=float, default=0.2, help="rel window size for time warping")
-	# parser.add_argument("--window", type=int, default=10, help="abs window size for time warping")
 	parser.add_argument("--alg", choices=("tw", "corr", "adj", "dtgw", "tgw", "tgembed", "n2v_aligned", "wl_tw", "rw_tw"), default="dtgw", help="algorithm to compute distances")
 	parser.add_argument("--signature", choices=("degree", "interaction"), default="interaction", help="vertex signature")
 	parser.add_argument("--k", type=int, default=2, help="k neighborhood")
