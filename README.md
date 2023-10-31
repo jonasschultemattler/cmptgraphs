@@ -1,7 +1,9 @@
 ## Compile dtgw
 
 cd code/dtgw
+
 make
+
 cd ../..
 
 
@@ -23,7 +25,10 @@ export PYTHONPATH=.
 
 ## Download datasets
 
-mkdir datasets
+chmod +x getds.sh
+
+./getds.sh
+
 
 
 ## Run Experiments
