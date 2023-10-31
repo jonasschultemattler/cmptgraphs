@@ -1,8 +1,8 @@
 ## Compile dtgw
 
-cd dtgw
-
+cd code/dtgw
 make
+cd ../..
 
 
 ## Create virtual environment
@@ -21,5 +21,12 @@ python3 -m pip install -r req.txt
 export PYTHONPATH=.
 
 
+## Download datasets
 
+mkdir datasets
+
+
+## Run Experiments
+
+mkdir output
 

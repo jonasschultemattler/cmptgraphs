@@ -1,0 +1,8 @@
+numpy
+tqdm
+matplotlib
+networkx
+igraph
+grakel
+nilearn
+lapjv
